@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.head{ 
+    border-radius: 20px;
+    justify-content: center;
+    width: 40%;
+    margin: 4% auto;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    gap: 10%;
+    box-shadow: 0 0 20px black;
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.profile-img img {
+    border-radius: 50%;
+    width: 150px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    outline: 1px solid black;
+}
+
+.userName {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.p-data1 {
+    justify-content: space-between;
+    display: flex;
+}
+
+.message-btn,
+.follow-btn {
+    cursor: pointer;
+    padding: 0px 10px;
+    background-color: rgb(234, 234, 234);
+}
+
+.p_data2 {
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.p_atetherate_id {
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 5px;
+    display: inline-block;
+    background-color: rgb(234, 234, 234);
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .head {
+        width: 90%; /* Increase width to take up more space on small screens */
+        flex-direction: column; /* Stack the items vertically */
+        gap: 5%;
+    }
+
+    .profile-img img {
+        width: 100px; /* Smaller profile image */
+    }
+
+    .userName {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .message-btn, .follow-btn {
+        padding: 5px 10px; /* Adjust padding */
+    }
+
+    .p-data1, .p_data2 {
+        display: flex;
+        /* flex-direction: column; Stack items vertically for small screens */
+        gap: 10px;
+
+    }
+
+    .p_atetherate_id {
+        font-size: 12px; /* Smaller font size for small screens */
+    }
+}
